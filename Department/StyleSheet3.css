@@ -1,0 +1,515 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0s linear;
+}
+
+
+#menu-bar {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: all .5s ease;
+}
+
+
+
+.sidebar ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#checka {
+    display: none;
+}
+
+label #btnr {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+label #cancel {
+    background: #fff;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+label #btnr {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+    left: 40px;
+    top: 30px;
+    font-size: 35px;
+    padding: 6px 12px;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: black;
+    padding: 4px 9px;
+}
+
+#checka:checked ~ .sidebar {
+    left: 0;
+}
+
+#checka:checked ~ label #btnr {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#checka:checked ~ label #cancel {
+    left: 195px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #05d3d3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons i {
+    font-size: 2.5rem;
+    color: aliceblue;
+    cursor: pointer;
+    margin-right: 2rem;
+    margin-top: 10%;
+}
+
+i:hover {
+    color: #05d3d3;
+}
+
+
+.navbar ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+.navbar ul li {
+float: left;
+display: inline-block;
+margin: 0 5px;
+}
+
+.navbar ul li a {
+color: white;
+text-decoration: none;
+line-height: 50px;
+font-size: 30px;
+padding: 8px 10px;
+}
+
+.navbar ul li a:hover {
+    background: #808080;
+    color: #05d3d3;
+    border-radius: 8px;
+}
+
+
+.sub-menu {
+    display: none;
+}
+
+.navbar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: #808080;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.navbar ul li:hover .sub-menu ul {
+display: block;
+margin: 10px;
+}
+
+.navbar ul li:hover .sub-menu ul li {
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted #fff;
+border-radius: 0;
+text-align: left;
+}
+
+.navbar ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.sub-menu ul li a {
+    font-size: 15px;
+    line-height: 0;
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 120vh;
+    background-image: url(dentist-assisting.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.banner img{
+    width:13%;
+    height:13%;
+    margin-left:2%;
+    margin-top:-1%;
+}
+
+
+
+.content {
+    padding-top: 15%;
+    width: 100%;
+    cursor: pointer;
+    color: black;
+}
+
+.content h1 {
+    margin-top:4%;
+    margin-left: 8%;
+    font-size: 70px;
+}
+
+.content h2 {
+    font-size:40px;
+    margin-left: 18%;
+    margin-top: 30px;
+}
+
+.content h4 {
+    margin-left:16%;
+    margin-top:-10%;
+    font-size:18px;
+}
+
+
+
+.btnb {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #1199ac;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: .5rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 18%;
+    margin-top:2%;
+}
+
+.btnz {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #1199ac;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: .5rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 2%;
+
+}
+
+.btnb:hover {
+    background: #bfb2b2;
+    color: black;
+}
+
+.btnz:hover {
+    background: #bfb2b2;
+    color: black;
+}
+
+.login-form-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 1000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    align-items: center;
+    justify-content: center;
+}
+
+    .login-form-container.active {
+        top: 0;
+    }
+
+    .login-form-container form {
+        margin: 2rem;
+        padding: 1.7rem 2rem;
+        border-radius: .5rem;
+        background: #fff;
+        width: 30rem;
+    }
+
+    .login-form-container h3 {
+        font-size: 3rem;
+        color: #444;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+.box {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: .2rem solid#1199ac;
+    color: #333;
+    margin: 1rem 0;
+    text-transform: none;
+}
+
+form .box:focus {
+    border-color: chocolate;
+}
+
+.login-form-container form #remember {
+    margin: 1rem 0;
+}
+
+.login-form-container form label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btne {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #1199ac;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+    .btne:hover {
+        background: #bfb2b2;
+        color: black;
+    }
+
+.login-form-container form .btne {
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form p {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+    .login-form-container form p a {
+        color: #1199ac;
+    }
+
+        .login-form-container form p a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+.login-form-container #form-close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-ul {
+    margin-top: 1%;
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+    .row .image {
+        flex: 1 1 40rem;
+    }
+
+.image img {
+    width: 50%;
+}
+
+.row h2 {
+    font-size: 1.5rem;
+    margin-left: 60%;
+    margin-top: -30%;
+    color: #666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 span {
+    margin-left: 23%;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+    .heading span {
+        font-size: 3.5rem;
+        background: #c8dcdc;
+        color: #1199ac;
+        border-radius: .5rem;
+        padding: 2rem 1rem;
+    }
+
+span.space {
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media(max-width:991px) {
+    header {
+        padding: 2rem;
+    }
+}
+
+
+@media(max-width:768px) {
+    #menu-bar {
+        display: initial;
+    }
+
+    #btnr {
+        margin-top: -3%;
+    }
+        header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: 1rem solid rgba(255,255,255,.2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+    }
+
+    .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}

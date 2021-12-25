@@ -1,0 +1,112 @@
+﻿
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    background:#113148;
+}
+
+.container{
+    max-width:700px;
+    width:100%;
+    background:#fff;
+    padding:25px 30px;
+    border-radius:5px;
+}
+
+.container .title{
+    font-size:25px;
+    font-weight:500;
+    position:relative;
+    color:#113148;
+}
+
+.container .title::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:3px;
+    width:30px;
+    background:#0094ff;
+}
+
+.container form .user-details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom:15px;
+    width:calc(100%/2-20px);
+}
+
+.user-details .input-box .details{
+    font-weight:500;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #0094ff;
+    margin-top:10px;
+    padding-left:15px;
+    font-size:16px;
+    border-bottom-width:2px;
+    transition:all 0.3s ease;
+}
+
+.user-details .input-box input:focus {
+    border-color: chocolate;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    width:50%;
+    margin-left:22%;
+    height:100%;
+    outline:none;
+    color:black;
+    border:none;
+    font-size:18px;
+    font-weight:500;
+    border-radius:5px;
+    letter-spacing:1px;
+    background:#1f6fa8;
+    cursor:pointer;
+}
+
+form .button input:hover{
+    background:#808080;
+    color:#fff;
+}
+
+.form-select {
+    width: 40%;
+    height: 30%;
+    margin-top: 7%;
+    border: 1px solid #0094ff
+}
+
+.form-select:focus {
+    border-color: chocolate;
+}
+
+
